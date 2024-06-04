@@ -2,7 +2,7 @@ import os
 import sqlite3
 
 def create_connection():
-    conn = sqlite3.connect('CustomerDatabase.db')
+    conn = sqlite3.connect('CustomerDatabase.sql')
     cursor = conn.cursor()
     cursor.execute('''CREATE TABLE IF NOT EXISTS customers (
                       id INTEGER PRIMARY KEY,
